@@ -1,0 +1,40 @@
+.custom-navbar {
+  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)) !important;
+  backdrop-filter: blur(6px) saturate(120%);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: var(--muted-text) !important;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+  transform: translateY(-2px);
+}
+
+/* hide on scroll down, show on scroll up */
+.custom-navbar {
+  transform: translateY(0);
+  transition: transform 300ms ease-in-out, opacity 250ms ease;
+  will-change: transform;
+}
+.custom-navbar.nav-hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+}
+.custom-navbar.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#home {
+  padding-top: 80px;
+}
+

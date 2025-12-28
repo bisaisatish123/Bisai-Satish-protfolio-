@@ -1,0 +1,94 @@
+.skills-section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px) saturate(120%);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+  position: relative;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.skill-icon-item {
+  font-size: 1.3rem;
+}
+
+.fullstack-section {
+  text-align: center;
+}
+
+.fullstack-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.skill-icon {
+  font-size: 2rem;
+}
+
+.capabilities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.capability-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.check-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4ade80;
+}
+
+@media (max-width: 768px) {
+  .fullstack-title {
+    font-size: 1.5rem;
+  }
+  
+  .skills-container,
+  .capabilities-container {
+    gap: 10px;
+  }
+  
+  .skill-item,
+  .capability-item {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
